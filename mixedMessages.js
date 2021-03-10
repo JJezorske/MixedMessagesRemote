@@ -1,23 +1,19 @@
 console.log('Mixed Messages Project')
 
-const names = ['He', 'They', 'She', 'It', 'We']
-
-const verbs = ['adores', 'remembers', 'prefers', 'encourages', 'ignores']
-
-const nouns= ['apples!', 'vinegar!', 'groot?', 'people', 'capitalism' ]
-
-const random5 = arr => {
+const mixedMessages = {
+    _names: ['Porey', 'Peachy', 'Pui', 'Pandemoni', 'Desdemona'],
+    _verbs: ['adores', 'remembers', 'prefers', 'encourages', 'ignores'],
+    _nouns: ['apples!', 'treats!', 'groot?', 'snacks', 'capitalism' ],
+    getRandomWord(arr) {
         let num = Math.floor(Math.random ()* (arr.length))
         return arr[num]
-};
-
-//console.log(random5(verbs))
-
-const randomMessage = (arr1, arr2, arr3) => {
-    let name = random5(arr1);
-    let verb = random5(arr2);
-    let noun = random5(arr3);
-    return `${name} ${verb} ${noun}`
+    },
+    generateMessage() {
+        const name = this.getRandomWord(this._names)
+        const verb = this.getRandomWord(this._verbs)
+        const noun = this.getRandomWord(this._nouns)
+        return `${name} ${verb} ${noun}`
+    },
 };
 
 return randomMessage(names, verbs, nouns)

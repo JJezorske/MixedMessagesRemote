@@ -19,5 +19,5 @@ const mixedMessages = {
 
 
   document.getElementById("btn").addEventListener("click", function (){
-    document.getElementById("output").innerHTML = randomMessage(names, verbs, nouns)
+    document.getElementById("output").innerHTML =  generateMessage(names, verbs, nouns)
 });

@@ -5,9 +5,9 @@
 2. Set up project JS file
     *mixedMessages.js*
 3. Integrate Code into git and github
-    
+    *(https://github.com/JJezorske/MixedMessagesRemote)*
 4. Create 3 arrays containing Message pieces
-
+    *names, verbs, nouns*
 5. Write JavaScript Code to randomize message pieces when run
 
 6. Integrate Arrays with code

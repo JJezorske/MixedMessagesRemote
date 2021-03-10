@@ -1,17 +1,15 @@
 console.log('Mixed Messages Project')
 
-const names = ['He', 'They', 'She', 'It', 'We']
+const names = ['Lopez', 'Peggy', 'Canberra', 'Apple', 'Kiki']
 
 const verbs = ['adores', 'remembers', 'prefers', 'encourages', 'ignores']
 
-const nouns= ['apples!', 'vinegar!', 'groot?', 'people', 'capitalism' ]
+const nouns= ['apples!', 'vinegar!', 'groot?', 'BELLS!', 'capitalism' ]
 
 const random5 = arr => {
         let num = Math.floor(Math.random ()* (arr.length))
         return arr[num]
 };
-
-//console.log(random5(verbs))
 
 const randomMessage = (arr1, arr2, arr3) => {
     let name = random5(arr1);
@@ -20,9 +18,7 @@ const randomMessage = (arr1, arr2, arr3) => {
     return `${name} ${verb} ${noun}`
 };
 
-let mmOutput = return randomMessage(names, verbs, nouns)
 
-
-const changeOutput = () => {
-    document.getElementById("output").innerHTML = mmOutput
-};
+document.getElementById("btn").addEventListener("click", function (){
+    document.getElementById("output").innerHTML = randomMessage(names, verbs, nouns)
+});

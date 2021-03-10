@@ -15,5 +15,5 @@ const mixedMessages = {
         return `${name} ${verb} ${noun}`
     },
 };
-   
-console.log(mixedMessages.generateMessage())
+
+return randomMessage(names, verbs, nouns)

@@ -20,4 +20,9 @@ const randomMessage = (arr1, arr2, arr3) => {
     return `${name} ${verb} ${noun}`
 };
 
-return randomMessage(names, verbs, nouns)
+let mmOutput = return randomMessage(names, verbs, nouns)
+
+
+const changeOutput = () => {
+    document.getElementById("output").innerHTML = mmOutput
+};

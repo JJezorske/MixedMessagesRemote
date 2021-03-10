@@ -1,8 +1,8 @@
 console.log('Mixed Messages Project')
 
-const urgotQuotes = []
+const pronouns = ['I', 'He', 'She', 'It', 'We']
 
-const teemoQuotes = []
+const verbs = ['like', 'hate', 'prefer', 'encourage', 'ignore']
 
-const kenchQuotes= []
+const nouns= ['apples!', 'vinegar!', 'groot?', 'people', 'capitalism' ]
 

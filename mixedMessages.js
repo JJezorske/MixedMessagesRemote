@@ -1,5 +1,6 @@
 console.log('Mixed Messages Project')
 
+
 const mixedMessages = {
     _names: ['Porey', 'Peachy', 'Pui', 'Pandemoni', 'Desdemona'],
     _verbs: ['adores', 'remembers', 'prefers', 'encourages', 'ignores'],
@@ -16,4 +17,7 @@ const mixedMessages = {
     },
 };
 
-return randomMessage(names, verbs, nouns)
+
+  document.getElementById("btn").addEventListener("click", function (){
+    document.getElementById("output").innerHTML = randomMessage(names, verbs, nouns)
+});

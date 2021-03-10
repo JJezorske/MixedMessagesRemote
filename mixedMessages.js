@@ -20,5 +20,4 @@ const randomMessage = (arr1, arr2, arr3) => {
     return `${name} ${verb} ${noun}`
 };
 
-console.log(randomMessage(names, verbs, nouns))
-//
+return randomMessage(names, verbs, nouns)
